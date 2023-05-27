@@ -45,7 +45,7 @@ body {
 }
 .userMenu, .interfaceMenu {
     line-height: 2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-bottom: 3rem;
 }
 .menuIcon {
@@ -62,13 +62,16 @@ body {
 }
 /* right side - top segment */
 .rightWrap {
+    display: grid;
     grid-column: 2/ span 5;
+    grid-template-rows: 15% 85%;
 }
 .topPart {
     display: grid;
+    grid-row: 1;
     grid-template-rows: 40% 60%;
-    grid-template-columns: 3rem 55% 35% auto;
-    height: 11rem;
+    grid-template-columns: 6rem 50% 40% auto;
+    height: auto;
     background-color: white;
     box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
     align-items: center;
@@ -89,15 +92,15 @@ body {
 #findWindow {
     background-color: rgb(227, 225, 225);
     width: 35rem;
-    height: 1.7rem;
+    height: 2.5rem;
     border-radius: 10px;
     border: none;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
 }
 .smallAvatar{
     border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     grid-row: 1;
 }
 .bigAvatar {
@@ -124,16 +127,21 @@ h1{
     grid-row: 2;
     grid-column: 3;
     display: grid;
-    grid-template-columns: repeat(3, 6rem);
+    grid-template-columns: repeat(3, 8rem);
     grid-column-gap: 2rem;
     align-self: center;
 }
 .blueButton{
     color: white;
-    border-radius: 20px;
-    padding: 8px 20px 8px 20px;
+    border-radius: 30px;
+    padding: 8px 24px 8px 24px;
     background-color: rgb(0, 187, 255);
     border: none;
-    height: 2.5rem;
-    font-size: 1rem;
+    height: 3rem;
+    font-size: 1.1rem;
+}
+
+/* Bottom right part */
+.botPart{
+    grid-row: 2;
 }
