@@ -145,7 +145,7 @@ h1{
     font-size: 1.1rem;
 }
 
-/* Bottom right part */
+/* wide cards - bottom right */
 .botPart{
     grid-row: 2;
     display:grid;
@@ -234,4 +234,58 @@ h1{
 #cardSix{
 grid-column: 2;
 grid-row: 4;
+}
+/* right cards - bottom right */
+.rightCards{
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 3rem 18rem 2rem 18rem;
+    grid-row-gap: 10px;
+}
+#rightCardsHeaderTop{
+    align-self: end;
+    grid-row: 1;
+}
+.announceCard{
+    width: 80%;
+    height: 18rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+}
+.topAnnounceCard{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 30% 30% 30%;
+}
+.announceProp{
+    align-self: center;
+    height: 30%;
+}
+#noBot{
+    border: none;
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+#firstAnnounce{
+    grid-column: 2;
+    grid-row: 1;
+}
+#secondAnnounce{
+    grid-column: 2;
+    grid-row: 2;
+}
+#thirdAnnounce{
+    grid-column: 2;
+    grid-row: 3;
+}
+.grayTextSmall{
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 16px;
+}
+#rightCardsHeaderBot{
+    align-self: end;
+    grid-row: 3;
 }
