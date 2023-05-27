@@ -22,7 +22,7 @@ body {
 /* left nav menu */
 .nav{
     height: 100%;
-    background-color: rgb(0, 187, 255);
+    background-color: rgb(0, 136, 255);
     color: white;
     display: grid;
     grid-template-columns: 15% 85%;
@@ -64,7 +64,7 @@ body {
 .rightWrap {
     display: grid;
     grid-column: 2/ span 5;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 10% 90%;
 }
 .topPart {
     display: grid;
@@ -92,7 +92,7 @@ body {
 #findWindow {
     background-color: rgb(227, 225, 225);
     width: 35rem;
-    height: 2.5rem;
+    height: 2rem;
     border-radius: 10px;
     border: none;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
@@ -111,6 +111,10 @@ body {
     grid-column: 1;
     justify-self: start;
     align-items: center;
+}
+.articleHeader{
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 .name{
     grid-column: 2;
@@ -135,13 +139,99 @@ h1{
     color: white;
     border-radius: 30px;
     padding: 8px 24px 8px 24px;
-    background-color: rgb(0, 187, 255);
+    background-color: rgb(0, 136, 255);
     border: none;
-    height: 3rem;
+    height: 2.5rem;
     font-size: 1.1rem;
 }
 
 /* Bottom right part */
 .botPart{
     grid-row: 2;
+    display:grid;
+    grid-template-columns: 70% auto;
+}
+.leftCards{
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3rem repeat(3, 13rem) 3rem;
+    grid-gap: 10px 10px;
+    padding-left: 1.5rem;
+}
+.wideCard{
+    background-color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 12rem;
+    border-radius: 10px;
+    display:grid;
+    grid-template-columns: 10px 1fr 1fr 10px;
+    grid-template-rows: 2rem 2rem 5rem 2rem 1rem; 
+}
+.orangeBackground{
+    background-color: orange;
+    border-radius: 10px 0 0 10px;
+    grid-column: 1;
+    grid-row: 1 / span 5;
+}
+.cardHeader {
+    grid-column: 2 / span 3;
+    grid-row: 2 / 3;
+    padding-left: 1rem;
+    align-self: end;
+}
+.greyText{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    grid-column: 2 / span 3;
+    grid-row: 3 / 4;
+    max-height: 5rem;
+    padding-left: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.cardIcons{
+    grid-column: 3;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    grid-row: 4;
+    max-width: 10rem;
+}
+.cardIconsProp{
+    height: 1.5rem;
+    width: 1.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#leftCardsHeader{
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+}
+#cardOne{
+    grid-column: 1;
+    grid-row: 2;
+}
+#cardTwo{
+    grid-column: 2;
+    grid-row: 2;
+}
+#cardThree{
+    grid-column: 1;
+    grid-row: 3;
+}
+#cardFour{
+    grid-column: 2;
+    grid-row: 3;
+}
+#cardFive{
+    grid-column: 1;
+    grid-row: 4;
+}
+#cardSix{
+grid-column: 2;
+grid-row: 4;
 }
