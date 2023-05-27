@@ -248,7 +248,8 @@ grid-row: 4;
 }
 .announceCard{
     width: 80%;
-    height: 18rem;
+    max-width: 80%;
+    height: 17rem;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 10px;
@@ -288,4 +289,59 @@ grid-row: 4;
 #rightCardsHeaderBot{
     align-self: end;
     grid-row: 3;
+}
+.botAnnounceCard{
+    display: grid;
+    grid-template-columns: 20% 60% auto;
+    grid-template-rows: 20% 20% 20% 20%;
+    grid-gap: 10px 10px;
+    padding-top: 1rem
+}
+.greyTextRight{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+}
+#avatarOne{
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    justify-self: end;
+}
+.firstProfile{
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+}
+#avatarTwo{
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+    justify-self: end;
+}
+#avatarThree{
+    grid-column: 1;
+    grid-row: 3;
+    align-self: center;
+    justify-self: end;
+}
+#avatarFour{
+    grid-column: 1;
+    grid-row: 4;
+    align-self: center;
+    justify-self: end;
+}
+.secondProfile{
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+}
+.thirdProfile{
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+}
+.fourthProfile{
+    grid-column: 2;
+    grid-row: 4;
+    align-self: center;
 }
